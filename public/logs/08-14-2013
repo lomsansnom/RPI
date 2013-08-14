@@ -1,0 +1,7 @@
+[console][{"rss":13262848,"heapTotal":12442880,"heapUsed":3645412}]  10:46:05.440  ***************************
+[console][{"rss":13357056,"heapTotal":12442880,"heapUsed":3703856}]  10:46:05.468  Start application WebClassifier
+[console][{"rss":13369344,"heapTotal":12442880,"heapUsed":3715108}]  10:46:05.475  Server listening on port 8080
+[console][{"rss":10498048,"heapTotal":9297152,"heapUsed":3550568}]  10:46:33.772  headers {"host":"192.168.1.45:8080","connection":"keep-alive","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8","user-agent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36","accept-encoding":"gzip,deflate,sdch","accept-language":"fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4"}
+[console][{"rss":13258752,"heapTotal":12442880,"heapUsed":3652920}]  11:04:59.208  ***************************
+[console][{"rss":13352960,"heapTotal":12442880,"heapUsed":3710776}]  11:04:59.233  Start application WebClassifier
+[console][{"rss":13365248,"heapTotal":12442880,"heapUsed":3722028}]  11:04:59.240  Server listening on port 8080

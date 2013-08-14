@@ -1,0 +1,81 @@
+{
+	"debug":"Y",
+	"encoding":"utf-8",
+	"title":"WebClassifier",
+	"server": {
+		"address":"192.168.1.45",
+		"port":8080,
+		"directory":"/home/frontware/WebClassifier/public/out",
+		"directoryUploads":"/home/frontware/WebClassifier/public/uploads"
+	},
+        "sitemap_user": {
+            "Email": "stmap@frontware3.dyndns.org",
+	    "Google token": "-none-"
+        },
+    "webservice" : {
+    	"address":"192.168.1.71",
+    	"port":8060,
+    	"results_limit":5,
+    	"timeout":5000
+    },
+	"alfresco" : {
+		"address":"192.168.1.39",
+		"port":8080,
+		"username":"aca",
+		"password":"acaaca"
+	},
+	"postgres" : {
+		"userName":"postgres",
+		"password":"efa",
+		"address":"192.168.1.60"
+	},
+	"openerp" : {
+		"address" : "192.168.1.44",
+		"port" : 8069,
+		"database" : "THAI_DB",
+		"username" : "admin",
+		"password" : "admin"
+	},
+	"auth" : {
+		"key":"-aWz|qX,eC&*1r^Vt.s8-*ByN2u?i.o/p������",
+		"algo":"aes256",
+		"encoding":"hex",
+		"google": {
+			"client_id":"",
+			"client_secret":"bFHUs94OZ7Xo7sZbawIlig8N",
+			"redirect_uri":"http://localhost:8282/oauth2callback",
+			"http_type":"https://",
+			"host":"accounts.google.com",
+			"auth":"/o/oauth2/auth",
+			"token":"/o/oauth2/token",
+			"contentType":"application/x-www-form-urlencoded",
+			"scope":"https://www.googleapis.com/auth/userinfo.email+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/drive.file",
+			"response_type":"code",
+			"access_type":"offline",
+			"grant_type":"authorization_code",
+			"approval_prompt":"force"
+		},
+                "linkedIn":{
+                        "api_key":""
+                           },
+                "facebook":{
+                        "api_key":"",
+                        "api_id" :""
+                }
+	},
+        "mailer" : {
+                "smtpserver":"smtp.gmail.com",
+                "smtpport":465,
+                "smtpssl": true,
+                "smtpuser": "frontware@gmail.com",
+                "smtppwd": "fwPicasa",
+                "senderfrom":"frontware@gmail.com",
+                "templates" : {
+                        "schedule":{
+                             "subject": "",
+                             "body":[""]
+                        }
+                }
+        },
+        "google_analytic_key" : ""
+}
