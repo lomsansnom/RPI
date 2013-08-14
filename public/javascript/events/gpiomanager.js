@@ -4,6 +4,6 @@ $(document).ready(function(){
 	});
 	
 	$("[id^='gpio']").on('click', function(){
-		$.post('/changerEtatGpio', {"numero" : $(this).attr('id').substring(4)})
+		$.post('/changerEtatGpio', {"numero" : $(this).attr('id').substring(4), "mode" : "out"})
 	}); 
 })
