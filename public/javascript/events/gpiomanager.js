@@ -1,9 +1,19 @@
 $(document).ready(function(){
 	$("[id^='pin']").on('click', function(){
-		alert("Veuillez utiliser les pins représentées en vertes")
+		alert("Veuillez utiliser les pins reprï¿½sentï¿½es en vertes")
 	});
 	
 	$("[id^='gpio']").on('click', function(){
-		$.post('/changerEtatGpio', {"numero" : $(this).attr('id').substring(4)})
+		data = '{"numero" : "' + $(this).attr('id').substring(4) + '"}'
+		success = function(){
+			alert("ok")
+		}
+		
+		$.ajax({
+		  type: "POST",
+		  url: '/changerEtatGpio',
+		  data: data,
+		  success: success,
+		});
 	}); 
 })
