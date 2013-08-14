@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Nouveau document 1">
+   sodipodi:docname="gpio.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,17 +26,17 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.6"
      inkscape:cx="230"
-     inkscape:cy="253.97919"
+     inkscape:cy="787.31253"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="740"
-     inkscape:window-height="689"
-     inkscape:window-x="610"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -85,14 +85,14 @@
     <path
        sodipodi:type="arc"
        style="fill:#008000"
-       id="pinSept"
+       id="gpioSept"
        sodipodi:cx="475"
        sodipodi:cy="280.69553"
        sodipodi:rx="21.666666"
        sodipodi:ry="25"
        d="m 496.66667,280.69553 a 21.666666,25 0 1 1 -43.33334,0 21.666666,25 0 1 1 43.33334,0 z"
        transform="matrix(1.1538461,0,0,1,-393.74356,-2.0000129)"
-       inkscape:label="pinSept" />
+       inkscape:label="gpioSept" />
     <path
        sodipodi:type="arc"
        style="fill:#000000"
@@ -107,36 +107,36 @@
     <path
        sodipodi:type="arc"
        style="fill:#008000"
-       id="pinOnze"
+       id="gpioOnze"
        sodipodi:cx="475"
        sodipodi:cy="280.69553"
        sodipodi:rx="21.666666"
        sodipodi:ry="25"
        d="m 496.66667,280.69553 a 21.666666,25 0 1 1 -43.33334,0 21.666666,25 0 1 1 43.33334,0 z"
        transform="matrix(1.1538461,0,0,1,-393.74356,137.33331)"
-       inkscape:label="pinOnze" />
+       inkscape:label="gpioOnze" />
     <path
        sodipodi:type="arc"
        style="fill:#008000"
-       id="pinTreize"
+       id="gpioTreize"
        sodipodi:cx="475"
        sodipodi:cy="280.69553"
        sodipodi:rx="21.666666"
        sodipodi:ry="25"
        d="m 496.66667,280.69553 a 21.666666,25 0 1 1 -43.33334,0 21.666666,25 0 1 1 43.33334,0 z"
        transform="matrix(1.1538461,0,0,1,-393.74356,207.00002)"
-       inkscape:label="pinTreize" />
+       inkscape:label="gpioTreize" />
     <path
        sodipodi:type="arc"
        style="fill:#008000"
-       id="pinQuinze"
+       id="gpioQuinze"
        sodipodi:cx="475"
        sodipodi:cy="280.69553"
        sodipodi:rx="21.666666"
        sodipodi:ry="25"
        d="m 496.66667,280.69553 a 21.666666,25 0 1 1 -43.33334,0 21.666666,25 0 1 1 43.33334,0 z"
        transform="matrix(1.1538461,0,0,1,-393.74356,276.66667)"
-       inkscape:label="pinQuinze" />
+       inkscape:label="gpioQuinze" />
     <path
        sodipodi:type="arc"
        style="fill:#ffff00"
@@ -239,14 +239,14 @@
     <path
        sodipodi:type="arc"
        style="fill:#008000"
-       id="pinVingtDeux"
+       id="gpioVingtDeux"
        sodipodi:cx="475"
        sodipodi:cy="280.69553"
        sodipodi:rx="21.666666"
        sodipodi:ry="25"
        d="m 496.66667,280.69553 a 21.666666,25 0 1 1 -43.33334,0 21.666666,25 0 1 1 43.33334,0 z"
        transform="matrix(1.1538461,0,0,1,-278.41025,498.61109)"
-       inkscape:label="pinVingtDeux" />
+       inkscape:label="gpioVingtDeux" />
     <path
        sodipodi:type="arc"
        style="fill:#000000"
@@ -261,25 +261,25 @@
     <path
        sodipodi:type="arc"
        style="fill:#008000"
-       id="pinDixHuit"
+       id="gpioDixHuit"
        sodipodi:cx="475"
        sodipodi:cy="280.69553"
        sodipodi:rx="21.666666"
        sodipodi:ry="25"
        d="m 496.66667,280.69553 a 21.666666,25 0 1 1 -43.33334,0 21.666666,25 0 1 1 43.33334,0 z"
        transform="matrix(1.1538461,0,0,1,-278.41025,357.88884)"
-       inkscape:label="pinDixHuit" />
+       inkscape:label="gpioDixHuit" />
     <path
        sodipodi:type="arc"
        style="fill:#008000"
-       id="pinSeize"
+       id="gpioSeize"
        sodipodi:cx="475"
        sodipodi:cy="280.69553"
        sodipodi:rx="21.666666"
        sodipodi:ry="25"
        d="m 496.66667,280.69553 a 21.666666,25 0 1 1 -43.33334,0 21.666666,25 0 1 1 43.33334,0 z"
        transform="matrix(1.1538461,0,0,1,-278.41025,287.52773)"
-       inkscape:label="pinSeize" />
+       inkscape:label="gpioSeize" />
     <path
        sodipodi:type="arc"
        style="fill:#000000"
@@ -294,13 +294,14 @@
     <path
        sodipodi:type="arc"
        style="fill:#008000"
-       id="pinDouze"
+       id="gpioDouze"
        sodipodi:cx="475"
        sodipodi:cy="280.69553"
        sodipodi:rx="21.666666"
        sodipodi:ry="25"
        d="m 496.66667,280.69553 a 21.666666,25 0 1 1 -43.33334,0 21.666666,25 0 1 1 43.33334,0 z"
-       transform="matrix(1.1538461,0,0,1,-278.41025,146.80553)" />
+       transform="matrix(1.1538461,0,0,1,-278.41025,146.80553)"
+       inkscape:label="gpioDouze" />
     <path
        sodipodi:type="arc"
        style="fill:#ffff00"
