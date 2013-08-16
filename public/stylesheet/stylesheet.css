@@ -15,6 +15,11 @@
 	display : inline-block;
 	vertical-align : top;
 }
+#sensGpio
+{
+	display : inline-block;
+	vertical-align : top;
+}
 .ligneVide
 {
 	height : 44px;
