@@ -8,10 +8,14 @@
 {
 	display : inline-block;
 	vertical-align : top;
-	margin-top : 70px;
+	margin-top : 60px;
 }
 #picGpio
 {
 	display : inline-block;
 	vertical-align : top;
+}
+.numeros tr
+{
+	margin-bottom : 50px;
 }
