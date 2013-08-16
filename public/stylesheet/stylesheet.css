@@ -1,12 +1,12 @@
 #numImpairs
 {
 	display : inline-block;
-	align : top;
+	vertical-align : top;
 }
 #numPairs
 {
 	display : inline-block;
-	align : top;
+	vertical-align : top;
 }
 #picGpio
 {
