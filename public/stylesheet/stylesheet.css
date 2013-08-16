@@ -2,11 +2,13 @@
 {
 	display : inline-block;
 	vertical-align : top;
+	margin-top : 20px;
 }
 #numPairs
 {
 	display : inline-block;
 	vertical-align : top;
+	margin-top : 20px;
 }
 #picGpio
 {
