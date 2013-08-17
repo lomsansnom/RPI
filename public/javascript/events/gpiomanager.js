@@ -4,7 +4,8 @@ $(document).ready(function(){
 	});
 	
 	$("[id^='gpio']").on('click', function(){
-		$.post('/changerEtatGpio', {"numero" : $(this).attr('id').substring(4), "mode" : "out"}, function(ret){
+		$.post('/changerEtatGpio', {"numero" : $(this).attr('id').substring(4), "mode" : "out"}, function(rett){
+			var ret = JSON.parse(rett)
 			alert("numero : " + ret['numero'])
 			alert("etat : " + ret['etat'])
 		})
