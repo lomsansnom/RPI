@@ -8,9 +8,9 @@ $(document).ready(function(){
 			alert("numero : " + ret['numero'])
 			alert("etat : " + ret['etat'])
 			if(ret['etat'] == 0)
-				$("#" + toLowerCase(ret['numero'])).css("color", "black")
+				$("#" + ret['numero'].toLowerCase()).css("color", "black")
 			else if(ret['etat'] == 1)
-				$("#" + toLowerCase(ret['numero'])).css("color", "red")
+				$("#" + ret['numero'].toLowerCase()).css("color", "red")
 		})
 	}); 
 })
