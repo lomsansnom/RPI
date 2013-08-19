@@ -7,15 +7,15 @@ function getEtatGpios()
 		{
 			if(ret[i] == 0)
 			{
-				$("#" + numeroGpio[i].toLowerCase()).css("color", "black")
+				$("#" + i.toLowerCase()).css("color", "black")
 			}
 			else if(ret[i] == 1)
 			{
-				$("#" + numeroGpio[i].toLowerCase()).css("color", "red")
+				$("#" + i.toLowerCase()).css("color", "red")
 			}
 			else
 			{
-				alert("Erreur lors de l'obtention de l'état du gpio " + i)
+				alert("Erreur lors de l'obtention de l'état du gpio " + key)
 			}
 		}
 	})
