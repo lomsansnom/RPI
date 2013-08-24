@@ -9,7 +9,7 @@ $(document).ready(function(){
 			   data : data,
 			   success : function(){
 				   alert('success')
-			   }
+			   },
 			   error : function(){
 				   alert('error')
 			   }
