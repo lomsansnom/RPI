@@ -3,7 +3,7 @@ $(document).ready(function(){
 	
 	$("#torrentOk").on('click', function(){
 		var data = '{"repertoire" : "' + $("[name='selDD']:checked").val() + '"}' 
-		$.ajax(url : '/downloadTorrent',
+		$.ajax({url : '/downloadTorrent',
 			   type : 'POST',
 			   contentType : 'application/json',
 			   data : data,
@@ -13,6 +13,6 @@ $(document).ready(function(){
 			   error : function(){
 				   alert('error')
 			   }
-		)
+		})
 	})
 })
