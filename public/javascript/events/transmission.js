@@ -7,11 +7,11 @@ $(document).ready(function(){
 			   type : 'POST',
 			   contentType : 'application/json',
 			   data : data,
-			   success : function(){
-				   alert('success')
+			   success : function(ret){
+				   alert(JSON.stringify(ret))
 			   },
 			   error : function(){
-				   alert('error')
+				   alert('erreur lors de l\'appel de /downloadTorrent')
 			   }
 		})
 	})
