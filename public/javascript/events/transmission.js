@@ -2,6 +2,17 @@ $(document).ready(function(){
 	getListeDD()
 	
 	$("#torrentOk").on('click', function(){
-		$.post("/downloadTorrent", {'"repertoire" : "' + $("[name='selDD']:checked").val() + '"'})
+		var data = '{"repertoire" : "' + $("[name='selDD']:checked").val() + '"}' 
+		$.ajax(url : '/downloadTorrent',
+			   type : 'POST',
+			   contentType : 'application/json',
+			   data : data,
+			   success : function(){
+				   alert('success')
+			   }
+			   error : function(){
+				   alert('error')
+			   }
+		)
 	})
 })
