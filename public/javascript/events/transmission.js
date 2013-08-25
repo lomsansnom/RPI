@@ -10,7 +10,8 @@ $(document).ready(function(){
 			   success : function(ret){
 				   alert(JSON.stringify(ret))
 			   },
-			   error : function(){
+			   error : function(ret){
+				   alert(JSON.stringify(ret))
 				   alert('erreur lors de l\'appel de /downloadTorrent')
 			   }
 		})
