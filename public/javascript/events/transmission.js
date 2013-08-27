@@ -16,7 +16,7 @@ $(document).ready(function(){
 				   alert('erreur lors de l\'appel de /downloadTorrent')
 			   }
 		})*/
-		var data = '"repertoire" : "' + $("[name='selDD']:checked").val() + '"'
+		var data = '{"repertoire" : "' + $("[name='selDD']:checked").val() + '"}'
 		$.post('/downloadTorrent', data, function(ret){
 			   alert(JSON.stringify(ret))
 		})
