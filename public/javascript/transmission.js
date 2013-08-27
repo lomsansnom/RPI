@@ -8,3 +8,31 @@ function getListeDD()
 		}
 	})
 }
+
+function isMounted(data)
+{
+	$.ajax({async : false,
+		   url : '/isMounted',
+		   type : 'POST',
+		   contentType : 'application/json',
+		   data : data,
+		   success : function(ret){
+			  if(ret['monte'])
+			  {
+				 $.ajax({async : false, 
+					 	url : '/downloadTorrent',
+					 	type : 'POST',
+					 	contentType : 'application/json', 
+					 	data : '{"repertoire" : "' + $("[name='selDD']:checked").val() + '", "torrent" : "' + $("#lientTorrent").val() + '"}',
+					 	success : function(rett){
+					 		alert("Téléchargement lancé")
+					 	}
+				 })
+			  }
+		   },
+		   error : function(ret){
+			   alert(JSON.stringify(ret))
+			   alert('erreur lors de l\'appel de /downloadTorrent')
+		   }
+	})	
+}
