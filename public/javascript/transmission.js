@@ -23,9 +23,9 @@ function isMounted(data)
 					 	url : '/downloadTorrent',
 					 	type : 'POST',
 					 	contentType : 'application/json', 
-					 	data : '{"repertoire" : "' + $("[name='selDD']:checked").val() + '", "torrent" : "' + $("#lientTorrent").val() + '"}',
+					 	data : '{"repertoire" : "' + $("[name='selDD']:checked").val() + '", "torrent" : "' + $("#lienTorrent").val() + '"}',
 					 	success : function(rett){
-					 		alert("Téléchargement lancé")
+					 		alert(rett)
 					 	}
 				 })
 			  }
