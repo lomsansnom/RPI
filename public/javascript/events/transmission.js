@@ -17,7 +17,7 @@ $(document).ready(function(){
 			   }
 		})*/
 		var data = '{"repertoire" : "' + $("[name='selDD']:checked").val() + '"}'
-		$.post('/downloadTorrent', data, function(ret){
+		$.post('/downloadTorrent', '{"repertoire" : "' + $("[name='selDD']:checked").val() + '"}', function(ret){
 			   alert(JSON.stringify(ret))
 		})
 	})
