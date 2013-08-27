@@ -4,7 +4,6 @@ function getListeDD()
 		for(var i in ret)
 		{
 			$("#selDD").after('<p> <input type="radio" name="selDD" value="' + ret[i].split(" ")[0] + '" />' + ret[i] + '</p>')
-			//cat /etc/mtab pour avoir la liste des périph montés
 		}
 	})
 }
@@ -23,7 +22,7 @@ function isMounted(data)
 					 	url : '/downloadTorrent',
 					 	type : 'POST',
 					 	contentType : 'application/json', 
-					 	data : '{"repertoire" : "' + $("[name='selDD']:checked").val() + '", "torrent" : "' + $("#lienTorrent").val() + '"}',
+					 	data : '{"repertoire" : "' + ret['monteSur'] + '", "torrent" : "' + $("#lienTorrent").val() + '"}',
 					 	success : function(rett){
 					 		alert(rett)
 					 	}
