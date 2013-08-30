@@ -59,7 +59,7 @@ function mountDD(chemin)
 			url : '/mountDD',
 			type : 'POST',
 			contentType : 'application/json',
-			data : '{"chemin" : "' + chemin '"}',
+			data : '{"chemin" : "' + chemin + '"}',
 			success : function(mountOk){
 				if(mountOk['ok'])
 					monteSur = mountOk['monteSur']
