@@ -31,20 +31,44 @@ function isMounted(data)
 			  else
 			  {
 				  monteSur = mountDD()
-				  $.ajax({async : true, 
-					 	url : '/downloadTorrent',
-					 	type : 'POST',
-					 	contentType : 'application/json', 
-					 	data : '{"repertoire" : "' + monteSur + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
-					 	success : function(rett){
-					 		alert(rett)
-					 	}
-				 })
+				  if(monteSur != "erreur")
+				  {
+					  $.ajax({async : true, 
+						 	url : '/downloadTorrent',
+						 	type : 'POST',
+						 	contentType : 'application/json', 
+						 	data : '{"repertoire" : "' + monteSur + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
+						 	success : function(rett){
+						 		alert(rett)
+						 	}
+					  })
+				  }
 			  }
 		   },
 		   error : function(ret){
 			   alert(JSON.stringify(ret))
-			   alert('erreur lors de l\'appel de /downloadTorrent')
+			   alert("erreur lors de l'appel de /isMounted")
 		   }
 	})	
+}
+
+function mountDD(chemin)
+{
+	var monteSur = ""
+	$.ajax({async : false,
+			url : '/mountDD',
+			type : 'POST',
+			contentType : 'application/json',
+			data : '{"chemin" : "' + chemin '"}',
+			success : function(mountOk){
+				if(mountOk['ok'])
+					monteSur = mountOk['monteSur']
+			},
+			error : function(mountOk){
+				   alert(JSON.stringify(mountOk))
+				   alert("erreur lors de l'appel de /mountDD")
+				   monteSur = "erreur"
+			}
+	})
+	return monteSur
 }
