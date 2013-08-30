@@ -13,7 +13,7 @@ $(document).ready(function(){
 				 	url : '/downloadTorrent',
 				 	type : 'POST',
 				 	contentType : 'application/json', 
-				 	data : '{"repertoire" : " /home/pi/torrents", "torrent" : "' + $("#lienTorrent").val() + '"}',
+				 	data : '{"repertoire" : "/home/pi/torrents", "torrent" : "' + $("#lienTorrent").val() + '"}',
 				 	success : function(rett){
 				 		alert(rett)
 				 	}
