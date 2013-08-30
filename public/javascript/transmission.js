@@ -28,6 +28,19 @@ function isMounted(data)
 					 	}
 				 })
 			  }
+			  else
+			  {
+				  monteSur = mountDD()
+				  $.ajax({async : true, 
+					 	url : '/downloadTorrent',
+					 	type : 'POST',
+					 	contentType : 'application/json', 
+					 	data : '{"repertoire" : "' + monteSur + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
+					 	success : function(rett){
+					 		alert(rett)
+					 	}
+				 })
+			  }
 		   },
 		   error : function(ret){
 			   alert(JSON.stringify(ret))
