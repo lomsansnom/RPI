@@ -30,7 +30,7 @@ function isMounted(data)
 			  }
 			  else
 			  {
-				  monteSur = mountDD()
+				  monteSur = mountDD($("[name='selDD']:checked").val())
 				  if(monteSur != "erreur")
 				  {
 					  $.ajax({async : true, 
