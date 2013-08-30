@@ -18,7 +18,7 @@ function isMounted(data)
 		   success : function(ret){
 			  if(ret['monte'])
 			  {
-				 $.ajax({async : false, 
+				 $.ajax({async : true, 
 					 	url : '/downloadTorrent',
 					 	type : 'POST',
 					 	contentType : 'application/json', 

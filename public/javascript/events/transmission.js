@@ -9,7 +9,7 @@ $(document).ready(function(){
 		}
 		else
 		{
-			 $.ajax({async : false, 
+			 $.ajax({async : true, 
 				 	url : '/downloadTorrent',
 				 	type : 'POST',
 				 	contentType : 'application/json', 
