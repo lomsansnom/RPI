@@ -22,7 +22,7 @@ function isMounted(data)
 					 	url : '/downloadTorrent',
 					 	type : 'POST',
 					 	contentType : 'application/json', 
-					 	data : '{"repertoire" : "' + ret['monteSur'] + '", "torrent" : "' + $("#lienTorrent").val() + '"}',
+					 	data : '{"repertoire" : "' + ret['monteSur'] + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
 					 	success : function(rett){
 					 		alert(rett)
 					 	}
