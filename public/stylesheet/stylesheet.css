@@ -8,7 +8,7 @@
 
 #contenu
 {
-	border-style : outset;
+	border-style : inset;
 	border-radius : 20px;
 	border-color : black;
 	border-width : 5px;
