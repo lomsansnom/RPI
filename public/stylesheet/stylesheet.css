@@ -1,12 +1,12 @@
 #main
 {
-	background-color : white;
+	background-color : #472b83;
 }
 
 #main li
 {
 	display : inline;
-	list-style-image : url('images/framboise.png');
+	list-style-image : url('images/framboise.jpg');
 }
 
 #numImpairs
