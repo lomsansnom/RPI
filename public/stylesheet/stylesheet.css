@@ -1,3 +1,9 @@
+#main
+{
+	border-style:inset;
+	border-width:medium;
+}
+
 #numImpairs
 {
 	display : inline-block;

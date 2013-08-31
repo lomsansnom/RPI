@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Interface Web RPI</title>
 		
+		<link type="text/css" href="/stylesheet/stylesheet.css" rel="stylesheet" />
         <script src="/javascript/utils/jQuery-1.10.1.js"></script>
         <script src="/javascript/index.js"></script>
         <script src="/javascript/events/index.js"></script>
@@ -13,12 +14,13 @@
     <body>
     	<input id='address' type='hidden' value='<%=address %>' />
         <input id='port' type='hidden' value='<%=port %>' />
-
-		<h1>Interface Web RPI</h1>
-		<div id="liens">
-			<p><a href="/gpiomanager">Gestion des GPIO</a></p>
-			<p><a href="/raspcontrol" target="_blank">Raspcontrol</a></p>
-			<p><a href="/transmission">Transmission</a></p>
+		<div id="main">
+			<h1>Interface Web RPI</h1>
+			<div id="liens">
+				<p><a href="/gpiomanager">Gestion des GPIO</a></p>
+				<p><a href="/raspcontrol" target="_blank">Raspcontrol</a></p>
+				<p><a href="/transmission">Transmission</a></p>
+			</div>
 		</div>
 		
     </body>
