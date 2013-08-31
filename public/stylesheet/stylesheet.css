@@ -1,11 +1,10 @@
-#main
+#liens
 {
 	background-color : #636463;
-	min-height : 40px;
 	padding : 2px;
 }
 
-#main li
+#liens li
 {
 	display : inline;
 	background-color : white;
