@@ -6,7 +6,9 @@
 #main li
 {
 	display : inline;
-	list-style-image : url('images/framboise.jpg');
+	background-image:url('images/framboise.png');
+	background-repeat:no-repeat;
+	background-position:0px 0px
 }
 
 #numImpairs
