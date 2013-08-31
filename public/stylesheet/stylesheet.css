@@ -1,3 +1,11 @@
+#main
+{
+	border-style : solid;
+	border-radius : 20px;
+	border-color : #636463;
+	border-width : 15px;
+}
+
 #liens
 {
 	background-color : #636463;
