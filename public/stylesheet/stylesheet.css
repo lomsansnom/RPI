@@ -1,6 +1,6 @@
 #main
 {
-	background-color : #472b83;
+	background-color : white;
 }
 
 #main li
@@ -8,7 +8,8 @@
 	display : inline;
 	background-image:url('images/framboise.png');
 	background-repeat:no-repeat;
-	background-position:0px 0px
+	background-position:0px 0px;
+	padding-left : 40px;
 }
 
 #numImpairs
