@@ -6,6 +6,10 @@
 	border-width : 15px;
 }
 
+#contenu
+{
+	box-shadow: 2px 2px black;
+}
 #liens
 {
 	background-color : #636463;
@@ -48,13 +52,14 @@
 }
 #sensGpio
 {
-	height : 40%;
-	width : 40%;
+	height : 100%;
+	width : 100%;
 }
 #divSensGpio
 {
 	display : inline-block;
 	vertical-align : top;
+	width : 400px;
 }
 .ligneVide
 {
