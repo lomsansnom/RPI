@@ -1,6 +1,6 @@
 #main
 {
-	background-color : white;
+	background-color : #636463;
 	min-height : 40px;
 	padding : 2px;
 }
@@ -8,6 +8,7 @@
 #main li
 {
 	display : inline;
+	background-color : white;
 	background-image:url('images/framboise.png');
 	background-repeat:no-repeat;
 	background-position:0px 0px;
