@@ -9,14 +9,17 @@
 {
 	display : inline;
 	background-color : white;
-	background-image:url('images/framboise.png');
-	background-repeat:no-repeat;
-	background-position:0px 0px;
+	background-image : url('images/framboise.png');
+	background-repeat : no-repeat;
+	background-position : 5px 0px;
 	padding-left : 40px;
+	padding-right : 4px;
 	padding-bottom : 18px;
-	padding-top : 8px;
+	padding-top : 10px;
 	margin-left : 5px;
 	margin-right : 5px;
+	border-top-left-radius : 20px;
+	border-top-right-radius : 20px;
 }
 
 #numImpairs
