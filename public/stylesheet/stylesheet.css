@@ -1,6 +1,8 @@
 #main
 {
 	background-color : white;
+	min-height : 40px;
+	padding : 2px;
 }
 
 #main li
@@ -10,6 +12,8 @@
 	background-repeat:no-repeat;
 	background-position:0px 0px;
 	padding-left : 40px;
+	margin-left : 5px;
+	margin-right : 5px;
 }
 
 #numImpairs
