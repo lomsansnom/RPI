@@ -1,4 +1,4 @@
-//Fonctions qui renvoie l'état de l'ensemble des GPIOs
+//Fonctions qui renvoie l'Ã©tat de l'ensemble des GPIOs
 function getEtatGpios()
 {
 	$.post("/getEtatGpios", function(ret){
@@ -15,7 +15,7 @@ function getEtatGpios()
 			}
 			else
 			{
-				alert("Erreur lors de l'obtention de l'état du gpio " + key)
+				alert("Erreur lors de l'obtention de l'Ã©tat du gpio " + key)
 			}
 		}
 	})
