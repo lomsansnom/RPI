@@ -7,11 +7,11 @@ function getEtatGpios()
 		{
 			if(ret[i] == 0)
 			{
-				$("#" + i.toLowerCase()).css("color", "black")
+				$("#" + i.toLowerCase()).css("background-color", "white")
 			}
 			else if(ret[i] == 1)
 			{
-				$("#" + i.toLowerCase()).css("color", "red")
+				$("#" + i.toLowerCase()).css("background-color", "red")
 			}
 			else
 			{
