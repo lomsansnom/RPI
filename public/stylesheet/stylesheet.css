@@ -48,8 +48,23 @@
 
 h1
 {
-	color : #75a928;
+	color: #75a928;
+	text-align: center;
+	text-shadow: 1px 1px #000000, -1px 1px #000000, -1px -1px #000000, 1px -1px #000000;
 }
+
+#btnLogin
+{
+	margin-top: 15px;
+	background-color: #75a928;
+	border-color: rgba(255,255,255,0);
+	border-radius: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
 #connexion
 {
 	margin: auto;
