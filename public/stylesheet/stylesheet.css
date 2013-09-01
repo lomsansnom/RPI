@@ -120,7 +120,7 @@ h1
 	width : 400px;
 }
 
-td:not(.ligneVide td)
+td:not('.ligneVide td')
 {
 	background-color : white;
 }
