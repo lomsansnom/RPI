@@ -53,7 +53,7 @@ h1
 	text-shadow: 1px 1px #000000, -1px 1px #000000, -1px -1px #000000, 1px -1px #000000;
 }
 
-#btnLogin
+#btnLogin, #torrentOk
 {
 	margin-top: 15px;
 	background-color: #75a928;
