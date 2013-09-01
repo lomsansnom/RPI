@@ -120,11 +120,12 @@ h1
 	width : 400px;
 }
 
-td:not(.ligneVide)
+td
 {
 	background-color : white;
 }
 .ligneVide
 {
 	height : 44px;
+	background-color : rgba(255,255,255,0);
 }
