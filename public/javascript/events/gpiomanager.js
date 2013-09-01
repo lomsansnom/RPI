@@ -11,7 +11,7 @@ $(document).ready(function(){
 			if(ret['etat'] == 0)
 				$("#" + ret['numero'].toLowerCase()).css("background-color", "white")
 			else if(ret['etat'] == 1)
-				$("#" + ret['numero'].toLowerCase()).css("background-color", "red")
+				$("#" + ret['numero'].toLowerCase()).css("background-color", "#75a928")
 		})
 	}); 
 })

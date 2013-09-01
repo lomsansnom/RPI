@@ -11,7 +11,7 @@ function getEtatGpios()
 			}
 			else if(ret[i] == 1)
 			{
-				$("#" + i.toLowerCase()).css("background-color", "red")
+				$("#" + i.toLowerCase()).css("background-color", "#75a928")
 			}
 			else
 			{
