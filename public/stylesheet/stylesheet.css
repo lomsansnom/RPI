@@ -62,13 +62,15 @@ h1
 #btnLogin, #torrentOk
 {
 	margin-top: 15px;
-	background-color: #75a928;
+	background-color: white;
 	border-color: rgba(255,255,255,0);
 	border-radius: 20px;
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-top: 3px;
 	padding-bottom: 3px;
+	font-weight: bold;
+	color: #75a928;
 }
 
 #connexion
@@ -99,16 +101,15 @@ h1
 
 #torrentForm
 {
-	margin-top: 15px;
-	background-color: white;
-	border-color: rgba(255,255,255,0);
-	border-radius: 20px;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	font-weight: bold;
-	color: #75a928;
+	margin: auto;
+	width: 600px;
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #bc1142;
+	border-radius: 20px 10px;
 }
 
 #numImpairs
