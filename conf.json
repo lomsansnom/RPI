@@ -11,6 +11,8 @@
 	"database": {
 		"address":"192.168.1.45",
 		"port":5432,
-		"username":"lomsansnom"
+		"database":"lomsansnom",
+		"username":"lomsansnom",
+		"password":"postgres"
 	}
 }
