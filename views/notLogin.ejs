@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Interface Web RPI</title>
+		
+		<link type="text/css" href="/stylesheet/stylesheet.css" rel="stylesheet" />
+        <script src="/javascript/utils/jQuery-1.10.1.js"></script>
+        <script src="/javascript/index.js"></script>
+        <script src="/javascript/events/index.js"></script>
+
+    </head>
+ 
+    <body>
+    	<input id='address' type='hidden' value='<%=address %>' />
+        <input id='port' type='hidden' value='<%=port %>' />
+        
+		<div id="main">
+			<div id="liens">
+				<ul>
+					<li class="actif"><a href="/">Accueil</a></li>
+					<li class="inactif"><a href="/gpiomanager">Gestion des GPIO</a></li>
+					<li class="inactif"><a href="/raspcontrol" target="_blank">Raspcontrol</a></li>
+					<li class="inactif"><a href="/transmission">Transmission</a></li>
+				</ul>
+			</div>
+			<div id="contenu">
+				<h1>Interface Web RPI</h1>
+				<div id="connexion">
+					Pour accéder à cette page vous devez être connecté.
+					<a href="/">Accueil</a>
+				</div>
+			</div>
+		</div>
+		
+    </body>
+</html>

@@ -8,4 +8,10 @@
 		"directory":"/home/frontware/WebClassifier/public/out",
 		"directoryUploads":"/home/frontware/WebClassifier/public/uploads"
 	}
+	"database": {
+		"address":"192.168.1.45",
+		"port":5432,
+		"username":"lomsansnom",
+		"password":"catal48"
+	}
 }

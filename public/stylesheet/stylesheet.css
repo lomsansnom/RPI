@@ -59,7 +59,7 @@ h1
 	text-shadow: 1px 1px #000000, -1px 1px #000000, -1px -1px #000000, 1px -1px #000000;
 }
 
-#btnLogin, #torrentOk
+#btnLogin, #torrentOk, #btnDeconnexion
 {
 	margin-top: 15px;
 	background-color: white;
@@ -74,7 +74,7 @@ h1
 	box-shadow : 2px 2px;
 }
 
-#btnLogin:hover, #torrentOk:hover
+#btnLogin:hover, #torrentOk:hover, #btnDeconnexion:hover
 {
 	cursor : pointer;
 }
