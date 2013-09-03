@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	getListeDD()
 	
-	$("#torrentOk").on('click', function(){
+	$("#btn").on('click', function(){
 		if($("[name='selDD']:checked").val() != 'rpi')
 		{
 			var data = '{"repertoire" : "' + $("[name='selDD']:checked").val() + '"}' 

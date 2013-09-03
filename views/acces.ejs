@@ -6,8 +6,8 @@
 		
 		<link type="text/css" href="/stylesheet/stylesheet.css" rel="stylesheet" />
         <script src="/javascript/utils/jQuery-1.10.1.js"></script>
-        <script src="/javascript/index.js"></script>
-        <script src="/javascript/events/index.js"></script>
+        <script src="/javascript/acces.js"></script>
+        <script src="/javascript/events/acces.js"></script>
 
     </head>
  
@@ -18,16 +18,18 @@
 		<div id="main">
 			<div id="liens">
 				<ul>
-					<li class="actif"><a href="/">Accueil</a></li>
+					<li class="inactif"><a href="/">Accueil</a></li>
 					<li class="inactif"><a href="/gpiomanager">Gestion des GPIO</a></li>
 					<li class="inactif"><a href="/raspcontrol" target="_blank">Raspcontrol</a></li>
 					<li class="inactif"><a href="/transmission">Transmission</a></li>
 				</ul>
 			</div>
 			<div id="contenu">
-				<h1>Interface Web RPI</h1>
+				<h1>Ajout d'utilisateur</h1>
 				<div id="connexion">
-					<input type="button" value="Déconnexion" id="btn" />
+					Nom d'utilisateur : <input type="text" id="username" /> <br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mot de passe : <input type="password" id="password" /> <br />
+					<input type="button" value="Envoyer" id="btn" />
 				</div>
 			</div>
 		</div>
