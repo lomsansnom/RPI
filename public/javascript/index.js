@@ -5,10 +5,21 @@ function demandeLogin()
 		 	type : 'POST',
 		 	contentType : 'application/json', 
 		 	data : '{"username" : "' + $("#username").val() + '", "password" : "' + $("#password").val() + '"}',
-		 	success : function(){
-		 		$(location).attr('href','/');
+		 	success : function(ret){
+		 		if(ret.ok)
+		 		{
+		 			$("#main").append("Vous êtes maintenant connecté, la page va se recharger automatiquement dans 3 secondes")
+		 			setTimeout(function(){$(location).attr('href','/');},3000);
+		 		}
+		 		else
+		 		{
+		 			alert(ret.erreur)
+		 		}
+		 	},
+		 	error: function(ret){
+		 		alert(ret.erreur)
 		 	}
-	 })
+	 	 })
 }
 
 function demandeLogout()
@@ -19,7 +30,8 @@ function demandeLogout()
 		 	contentType : 'application/json', 
 		 	data : '{"username" : "' + $("#username").val() + '", "password" : "' + $("#password").val() + '"}',
 		 	success : function(){
-		 		$(location).attr('href','/');
+		 		$("#main").append("Vous êtes maintenant déconnecté, la page ve se recharger automatiquement dans 3 secondes")
+	 			setTimeout(function(){$(location).attr('href','/');},3000);
 		 	}
 	 })
 }
