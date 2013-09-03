@@ -7,7 +7,7 @@ function ajouterMembre()
 	 	data : '{"username" : "' + $("#username").val() + '", "password" : "' + $("#password").val() + '"}',
 	 	success : function(){
 	 		$(location).attr('href','/');
-	 	}
+	 	},
 		error : function(){
 			alert("erreur")
 		}
