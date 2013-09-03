@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#btnLogin").on('click', function(){
+	$("#btn").on('click', function(){
 		demandeLogin()
 	})
 	
