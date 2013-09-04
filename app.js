@@ -24,7 +24,7 @@ app.configure ( function ( ) {
 	app.use ( express.static ( __dirname + '/public') );
 	app.use ( express.bodyParser ({uploadDir: conf.server.directoryUploads}));
 	app.use ( express.cookieParser ( "keyboard cat" ) );
-	app.use ( express.session ( {secret : "WebClassifier" } ) );
+	app.use ( express.session ( {secret : "rpi" } ) );
 	app.use ( express.methodOverride ( ) );
 	app.use ( express.compress() );
 	app.use ( app.router );

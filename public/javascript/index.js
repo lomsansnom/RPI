@@ -8,7 +8,6 @@ function demandeLogin()
 		 	success : function(ret){
 		 		if(ret.ok)
 		 		{
-		 			//$.session.set("user", $("#username").val())
 		 			$("#main").append("Vous êtes maintenant connecté, la page va se recharger automatiquement dans 3 secondes")
 		 			setTimeout(function(){$(location).attr('href','/');},3000);
 		 		}
@@ -21,18 +20,4 @@ function demandeLogin()
 		 		alert(ret.erreur)
 		 	}
 	 	 })
-}
-
-function demandeLogout()
-{
-	 $.ajax({async : false, 
-		 	url : '/logout',
-		 	type : 'POST',
-		 	contentType : 'application/json', 
-		 	data : '{"username" : "' + $("#username").val() + '", "password" : "' + $("#password").val() + '"}',
-		 	success : function(){
-		 		$("#main").append("Vous êtes maintenant déconnecté, la page ve se recharger automatiquement dans 3 secondes")
-	 			setTimeout(function(){$(location).attr('href','/');},3000);
-		 	}
-	 })
 }
