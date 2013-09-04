@@ -8,7 +8,7 @@ function demandeLogin()
 		 	success : function(ret){
 		 		if(ret.ok)
 		 		{
-		 			$.session.set(user, $("#username").val())
+		 			$.session.set("user", $("#username").val())
 		 			$("#main").append("Vous êtes maintenant connecté, la page va se recharger automatiquement dans 3 secondes")
 		 			setTimeout(function(){$(location).attr('href','/');},3000);
 		 		}
