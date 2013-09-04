@@ -8,3 +8,7 @@ $(document).ready(function() {
 		//détruire session
 	})
 });
+
+$(window).unload(function(){
+	alert("Vous quittez la page")
+})
