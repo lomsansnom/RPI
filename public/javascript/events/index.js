@@ -10,5 +10,5 @@ $(document).ready(function() {
 });
 
 $(window).unload(function(){
-	alert("Vous quittez la page")
+	$.post('/test')
 })
