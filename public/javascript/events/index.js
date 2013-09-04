@@ -8,7 +8,3 @@ $(document).ready(function() {
 		//détruire session
 	})
 });
-
-$(window).bind('beforeunload', function(){
-	$.post('/test')
-});
