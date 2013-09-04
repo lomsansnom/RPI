@@ -9,6 +9,6 @@ $(document).ready(function() {
 	})
 });
 
-$(window).unload(function(){
+$(window).bind('beforeunload', function(){
 	$.post('/test')
-})
+});
