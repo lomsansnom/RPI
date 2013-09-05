@@ -1,5 +1,12 @@
 $(document).ready(function() {
 	$("#btn").on('click', function(){
-		demandeLogin()
+		if($("#username").val() != "" && $("#password").val() != "")
+		{
+			demandeLogin()
+		}
+		else
+		{
+			alert("Veuillez remplir tous les champs")
+		}
 	})
 });
