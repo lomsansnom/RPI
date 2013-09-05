@@ -14,6 +14,7 @@ function demandeLogin()
 		 		else
 		 		{
 		 			alert(ret.erreur)
+		 			$('#password').val('')
 		 		}
 		 	},
 		 	error: function(ret){
