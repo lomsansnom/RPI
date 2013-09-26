@@ -14,7 +14,7 @@ function getEtatGpios()
 			}
 			else
 			{
-				alert("Erreur lors de l'obtention de l'état du gpio " + key)
+				alert("Erreur lors de l'obtention de l'état du gpio " + i)
 			}
 		}
 	})
