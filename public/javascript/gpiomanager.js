@@ -2,7 +2,6 @@
 function getEtatGpios()
 {
 	$.post("/getEtatGpios", function(ret){
-		var numeroGpio = ["onze", "douze", "treize", "quinze", "seize", "dixhuit", "vingtdeux", "sept"]
 		for(var i in ret)
 		{
 			if(ret[i] == 0)
