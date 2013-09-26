@@ -6,19 +6,19 @@ function demandeLogin()
 		 	contentType : 'application/json', 
 		 	data : '{"username" : "' + $("#username").val() + '", "password" : "' + $("#password").val() + '"}',
 		 	success : function(ret){
-		 		if(ret.ok)
+		 		if(ret.OK)
 		 		{
 		 			$("#main").append("Vous êtes maintenant connecté, la page va se recharger automatiquement dans 3 secondes")
 		 			setTimeout(function(){$(location).attr('href','/');},3000);
 		 		}
 		 		else
 		 		{
-		 			alert(ret.erreur)
+		 			alert(ret.Erreur)
 		 			$('#password').val('')
 		 		}
 		 	},
 		 	error: function(ret){
-		 		alert(ret.erreur)
+		 		alert(ret.Erreur)
 		 	}
 	 	 })
 }
