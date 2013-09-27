@@ -7,11 +7,18 @@ $(document).ready(function(){
 	});
 	
 	$("[id^='gpio']").on('click', function(){
-		$.post('/changerEtatGpio', {"numero" : $(this).attr('id').substring(4), "mode" : "out"}, function(ret){
-			if(ret['etat'] == 0)
-				$("#" + ret['numero'].toLowerCase()).css("background-color", "white")
-			else if(ret['etat'] == 1)
-				$("#" + ret['numero'].toLowerCase()).css("background-color", "#75a928")
+		$.post('/changerEtatGpio', {"numGpio" : $(this).attr('id').substring(4), "mode" : "out"}, function(ret){
+			if(ret.OK)
+			{
+				if(ret['etat'] == 0)
+					$("#" + ret['numGpio'].toLowerCase()).css("background-color", "white")
+				else if(ret['etat'] == 1)
+					$("#" + ret['numGpio'].toLowerCase()).css("background-color", "#75a928")
+			}
+			else
+			{
+				alert(ret.Erreur)
+			}
 		})
 	}); 
 })
