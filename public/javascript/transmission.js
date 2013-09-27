@@ -47,7 +47,10 @@ function isMounted(data)
 							 	contentType : 'application/json', 
 							 	data : '{"repertoire" : "' + monteSur + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
 							 	success : function(rett){
-							 		alert(rett)
+							 		if(!rett.OK)
+							 		{
+							 			alert(rett.Erreur)
+							 		}
 							 	}
 						  })
 					  }
@@ -75,7 +78,10 @@ function mountDD(chemin)
 				if(mountOk['OK'])
 					monteSur = mountOk['monteSur']
 				else
+				{
 					alert(mountOk['Erreur'])
+					monteSur = "erreur"
+				}
 			},
 			error : function(mountOk){
 				   alert(JSON.stringify(mountOk))
