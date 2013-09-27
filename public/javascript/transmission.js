@@ -72,8 +72,10 @@ function mountDD(chemin)
 			contentType : 'application/json',
 			data : '{"chemin" : "' + chemin + '"}',
 			success : function(mountOk){
-				if(mountOk['ok'])
+				if(mountOk['OK'])
 					monteSur = mountOk['monteSur']
+				else
+					alert(mountOk['Erreur'])
 			},
 			error : function(mountOk){
 				   alert(JSON.stringify(mountOk))
