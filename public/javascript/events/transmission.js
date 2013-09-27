@@ -15,7 +15,8 @@ $(document).ready(function(){
 				 	contentType : 'application/json', 
 				 	data : '{"repertoire" : "/home/pi/torrents", "torrent" : "' + $("#lienTorrent").val() + '"}',
 				 	success : function(rett){
-				 		alert(rett)
+				 		if(!ret.OK)
+				 			alert(rett.Erreur)
 				 	}
 			 })
 		}
