@@ -5,7 +5,8 @@ function getListeDD()
 		{
 			for(var i in ret)
 			{
-				$("#selDD").after('<p> <input type="radio" name="selDD" value="' + ret[i].split(" ")[0] + '" />' + ret[i] + '</p>')
+				if(i != "OK")
+					$("#selDD").after('<p> <input type="radio" name="selDD" value="' + ret[i].split(" ")[0] + '" />' + ret[i] + '</p>')
 			}
 		}
 		else
