@@ -4,7 +4,7 @@ function demandeLogin()
 		 	url : '/login',
 		 	type : 'POST',
 		 	contentType : 'application/json', 
-		 	data : '{"username" : "' + $("#username").val() + '", "password" : "' + $("#password").val() + '"}',
+		 	data : '{"username" : "' + $("#username").val() + '", "password" : "' + CryptoJS.MD5($("#password").val()) + '"}',
 		 	success : function(ret){
 		 		if(ret.OK)
 		 		{
