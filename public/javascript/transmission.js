@@ -1,10 +1,15 @@
 function getListeDD()
 {
 	$.post('/getListeDD', function(ret){
-		for(var i in ret)
+		if(ret.OK)
 		{
-			$("#selDD").after('<p> <input type="radio" name="selDD" value="' + ret[i].split(" ")[0] + '" />' + ret[i] + '</p>')
+			for(var i in ret)
+			{
+				$("#selDD").after('<p> <input type="radio" name="selDD" value="' + ret[i].split(" ")[0] + '" />' + ret[i] + '</p>')
+			}
 		}
+		else
+			alert(ret.Erreur)
 	})
 }
 
