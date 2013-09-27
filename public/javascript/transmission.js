@@ -22,34 +22,39 @@ function isMounted(data)
 		   contentType : 'application/json',
 		   data : data,
 		   success : function(ret){
-			  if(ret['monte'])
+			  if(ret["OK"])
 			  {
-				 $.ajax({async : true, 
-					 	url : '/downloadTorrent',
-					 	type : 'POST',
-					 	contentType : 'application/json', 
-					 	data : '{"repertoire" : "' + ret['monteSur'] + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
-					 	success : function(rett){
-					 		alert(rett)
-					 	}
-				 })
-			  }
-			  else
-			  {
-				  monteSur = mountDD($("[name='selDD']:checked").val())
-				  if(monteSur != "erreur")
+				  if(ret['monte'])
 				  {
-					  $.ajax({async : true, 
+					 $.ajax({async : true, 
 						 	url : '/downloadTorrent',
 						 	type : 'POST',
 						 	contentType : 'application/json', 
-						 	data : '{"repertoire" : "' + monteSur + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
+						 	data : '{"repertoire" : "' + ret['monteSur'] + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
 						 	success : function(rett){
 						 		alert(rett)
 						 	}
-					  })
+					 })
+				  }
+				  else
+				  {
+					  monteSur = mountDD($("[name='selDD']:checked").val())
+					  if(monteSur != "erreur")
+					  {
+						  $.ajax({async : true, 
+							 	url : '/downloadTorrent',
+							 	type : 'POST',
+							 	contentType : 'application/json', 
+							 	data : '{"repertoire" : "' + monteSur + '", "torrent" : "' + $("#lienTorrent").val().replace('"', '\"') + '"}',
+							 	success : function(rett){
+							 		alert(rett)
+							 	}
+						  })
+					  }
 				  }
 			  }
+			  else
+				  alert(ret["Erreur"])
 		   },
 		   error : function(ret){
 			   alert(JSON.stringify(ret))
