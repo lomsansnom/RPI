@@ -18,16 +18,24 @@
 		<div id="main">
 			<div id="liens">
 				<ul>
-					<li class="actif"><a href="/">Accueil</a></li>
+					<li class="inactif"><a href="/">Accueil</a></li>
 					<li class="inactif"><a href="/gpiomanager">Gestion des GPIO</a></li>
 					<li class="inactif"><a href="/raspcontrol" target="_blank">Raspcontrol</a></li>
 					<li class="inactif"><a href="/transmission">Transmission</a></li>
-					<li class="inactif"><a href="/lecteur">Lecteur</a></li>
+					<li class="actif"><a href="/lecteur">Lecteur</a></li>
 				</ul>
 			</div>
 			<div id="contenu">
-				<input type="text" id="cheminMusiques" />
-				<input type="button" id="sendChemin" />
+				<div id="player">
+					<div id="selectMusiques">
+						<input type="text" id="cheminMusiques" />
+						<input type="button" id="sendChemin" />
+					</div>
+					<div id="listeMusiques">
+
+					</div>
+					
+				</div>
 			</div>
 		</div>
 		
