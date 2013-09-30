@@ -8,6 +8,7 @@ function getListeMusiques(chemin)
 	 	data : data,
 	 	success : function(ret){
 	 		if(ret.OK)
+	 		{
 	 			if(ret.parent)
 	 			{
 	 				$("#listeMusiques").empty()
@@ -18,37 +19,43 @@ function getListeMusiques(chemin)
 	 					{
 	 						$("#listeMusiques").append("<p>" + ret.parent[i].substring(0, ret.parent[i].length - 4) + "</p>")
 	 					}
-	 				}
-	 				if(ret.sousDossier)
-	 				{
-	 					$("#listeMusiques").append("<h2>SousDossier</h2>")
-	 					for(var i in ret.parent)
+	 					else if(ret.parent[i])
+	 					{
+	 						$("#listeMusiques").append("<p>" + ret.parent[i] + "</p>")
+	 					}
+	 					
+	 					if(ret.sousDossier)
 		 				{
 	 						for(var ii in ret.sousDossier[i])
 		 					{	
 	 							if(ret.sousDossier[i][ii].substring(ret.sousDossier[i][ii].length - 4, ret.sousDossier[i][ii].length) == ".mp3")
 	 							{
-		 							$("#listeMusiques").append("<p>" + ret.sousDossier[i][ii].substring(0, ret.sousDossier[i][ii].length - 4) + "</p>")
+		 							$("#listeMusiques").append("<p>&nbsp;&nbsp;&nbsp;&nbsp;" + ret.sousDossier[i][ii].substring(0, ret.sousDossier[i][ii].length - 4) + "</p>")
 		 						}
-		 					}
-		 				}
-	 					if(ret.sousSousDossier)
- 						{
-	 						$("#listeMusiques").append("<h2>SousSousDossier</h2>")
-	 						for(var i in ret.parent)
-			 				{
-		 						for(var ii in ret.sousDossier[i])
-			 					{
+	 							else if(ret.sousDossier[i][ii])
+	 							{
+		 							$("#listeMusiques").append("<p>&nbsp;&nbsp;&nbsp;&nbsp;" + ret.sousDossier[i][ii] + "</p>")
+		 						}
+	 							
+	 							if(ret.sousSousDossier)
+		 						{
 		 							for(var iii in ret.sousSousDossier[i][ii])
+		 							{
 			 							if(ret.sousSousDossier[i][ii][iii].substring(ret.sousSousDossier[i][ii][iii].length - 4, ret.sousSousDossier[i][ii][iii].length) == ".mp3")
 			 							{
-				 							$("#listeMusiques").append("<p>" + ret.sousSousDossier[i][ii][iii].substring(0, ret.sousSousDossier[i][ii][iii].length - 4) + "</p>")
+				 							$("#listeMusiques").append("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + ret.sousSousDossier[i][ii][iii].substring(0, ret.sousSousDossier[i][ii][iii].length - 4) + "</p>")
 				 						}
+			 							else if(ret.sousSousDossier[i][ii][iii])
+			 							{
+				 							$("#listeMusiques").append("<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + ret.sousSousDossier[i][ii][iii] + "</p>")
+				 						}
+		 							}
 			 					}
 			 				}
  						}
-	 				}
-	 			}
+ 					}
+ 				}
+	 		}
 	 		else
 	 			alert(ret.Erreur)
 	 	}
