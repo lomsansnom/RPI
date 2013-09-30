@@ -16,7 +16,7 @@ function getListeMusiques(chemin)
 	 				{
 	 					if(ret.parent[i].substring(ret.parent[i].length - 4, ret.parent[i].length) == ".mp3")
 	 					{
-	 						$("#listeMusiques").append("<p>" + ret.parent[i].substring(ret.parent[i].length - 4) + "</p>")
+	 						$("#listeMusiques").append("<p>" + ret.parent[i].substring(0, ret.parent[i].length - 4) + "</p>")
 	 					}
 	 				}
 	 				if(ret.sousDossier)
@@ -24,11 +24,11 @@ function getListeMusiques(chemin)
 	 					$("#listeMusiques").append("<h2>SousDossier</h2>")
 	 					for(var i in ret.parent)
 		 				{
-	 						for(var ii in ret.sousDossier)
+	 						for(var ii in ret.sousDossier[i])
 		 					{	
 	 							if(ret.sousDossier[i][ii].substring(ret.sousDossier[i][ii].length - 4, ret.sousDossier[i][ii].length) == ".mp3")
 	 							{
-		 							$("#listeMusiques").append("<p>" + ret.sousDossier[i][ii].substring(ret.sousDossier[i][ii].length - 4) + "</p>")
+		 							$("#listeMusiques").append("<p>" + ret.sousDossier[i][ii].substring(0, ret.sousDossier[i][ii].length - 4) + "</p>")
 		 						}
 		 					}
 		 				}
@@ -37,12 +37,12 @@ function getListeMusiques(chemin)
 	 						$("#listeMusiques").append("<h2>SousSousDossier</h2>")
 	 						for(var i in ret.parent)
 			 				{
-		 						for(var ii in ret.sousDossier)
+		 						for(var ii in ret.sousDossier[i])
 			 					{
-		 							for(var iii in ret.sousSousDossier)
+		 							for(var iii in ret.sousSousDossier[i][ii])
 			 							if(ret.sousSousDossier[i][ii][iii].substring(ret.sousSousDossier[i][ii][iii].length - 4, ret.sousSousDossier[i][ii][iii].length) == ".mp3")
 			 							{
-				 							$("#listeMusiques").append("<p>" + ret.sousSousDossier[i][ii][iii].substring(ret.sousSousDossier[i][ii][iii].length - 4) + "</p>")
+				 							$("#listeMusiques").append("<p>" + ret.sousSousDossier[i][ii][iii].substring(0, ret.sousSousDossier[i][ii][iii].length - 4) + "</p>")
 				 						}
 			 					}
 			 				}
