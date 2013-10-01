@@ -1,7 +1,7 @@
 function getListeMusiques(chemin)
 {
 	data = '{"chemin" : "' + chemin + '"}'
-	$.ajax({async : true, 
+	$.ajax({async : false, 
 	 	url : '/getListeMusiques',
 	 	type : 'POST',
 	 	contentType : 'application/json', 
@@ -60,3 +60,22 @@ function getListeMusiques(chemin)
 	 	}
 	})
 }
+
+function getMusique(data)
+{
+	$.ajax({async : true, 
+	 	url : '/getMusique',
+	 	type : 'POST',
+	 	contentType : 'application/json', 
+	 	data : data,
+	 	success : function(ret){
+	 		alert("ok")
+	 	}
+	})
+}
+	
+	
+	
+	
+	
+	
