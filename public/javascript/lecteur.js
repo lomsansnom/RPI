@@ -12,7 +12,6 @@ function getListeMusiques(chemin)
 	 			if(ret.parent)
 	 			{
 	 				$("#listeMusiques").empty()
-	 				$("#listeMusiques").append("<h2>Parent</h2>")
 	 				for(var i in ret.parent)
 	 				{
 	 					if(ret.parent[i].substring(ret.parent[i].length - 4, ret.parent[i].length) == ".mp3")
