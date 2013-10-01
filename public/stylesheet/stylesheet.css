@@ -124,7 +124,6 @@ h1
 	width: 800px;
 	height: 600px;
 	overflow-y: scroll;
-	text-align: center;
 	padding-bottom: 15px;
 	padding-top: 15px;
 	margin-bottom: 20px;
@@ -160,6 +159,11 @@ h1
 	display : inline-block;
 	vertical-align : top;
 	width : 400px;
+}
+
+.cliquable
+{
+
 }
 
 td

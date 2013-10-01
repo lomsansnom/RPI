@@ -17,7 +17,7 @@ function getListeMusiques(chemin)
 	 				{
 	 					if(ret.parent[i].substring(ret.parent[i].length - 4, ret.parent[i].length) == ".mp3")
 	 					{
-	 						$("#listeMusiques").append('<span id="' + ret.parent[i] + '">' + ret.parent[i].substring(0, ret.parent[i].length - 4) + '</span><br />')
+	 						$("#listeMusiques").append('<span class="cliquable" id="' + ret.parent[i] + '">' + ret.parent[i].substring(0, ret.parent[i].length - 4) + '</span><br />')
 	 					}
 	 					else if(ret.parent[i])
 	 					{
@@ -30,11 +30,11 @@ function getListeMusiques(chemin)
 		 					{	
 	 							if(ret.sousDossier[i][ii].substring(ret.sousDossier[i][ii].length - 4, ret.sousDossier[i][ii].length) == ".mp3")
 	 							{
-		 							$("#listeMusiques").append('<span id="' + ret.parent[i] + '/' + ret.sousDossier[i][ii] + '">' + ret.sousDossier[i][ii].substring(0, ret.sousDossier[i][ii].length - 4) + '</span> <br />')
+		 							$("#listeMusiques").append('<span class="cliquable" id="' + ret.parent[i] + '/' + ret.sousDossier[i][ii] + '">' + ret.sousDossier[i][ii].substring(0, ret.sousDossier[i][ii].length - 4) + '</span> <br />')
 		 						}
 	 							else if(ret.sousDossier[i][ii])
 	 							{
-		 							$("#listeMusiques").append(ret.sousDossier[i][ii] + "< br />")
+		 							$("#listeMusiques").append(ret.sousDossier[i][ii] + "<br />")
 		 						}
 	 							
 	 							if(ret.sousSousDossier)
@@ -43,7 +43,7 @@ function getListeMusiques(chemin)
 		 							{
 			 							if(ret.sousSousDossier[i][ii][iii].substring(ret.sousSousDossier[i][ii][iii].length - 4, ret.sousSousDossier[i][ii][iii].length) == ".mp3")
 			 							{
-				 							$("#listeMusiques").append('<span id="' + ret.parent[i] + '/' + ret.sousDossier[i][ii] + '/' + ret.sousSousDossier[i][ii][iii] + '">' + ret.sousSousDossier[i][ii][iii].substring(0, ret.sousSousDossier[i][ii][iii].length - 4) + '</span> <br />')
+				 							$("#listeMusiques").append('<span class="cliquable" id="' + ret.parent[i] + '/' + ret.sousDossier[i][ii] + '/' + ret.sousSousDossier[i][ii][iii] + '">' + ret.sousSousDossier[i][ii][iii].substring(0, ret.sousSousDossier[i][ii][iii].length - 4) + '</span> <br />')
 				 						}
 			 							else if(ret.sousSousDossier[i][ii][iii])
 			 							{
