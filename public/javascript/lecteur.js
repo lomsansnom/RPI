@@ -43,7 +43,7 @@ function getListeMusiques(chemin)
 		 							{
 			 							if(ret.sousSousDossier[i][ii][iii].substring(ret.sousSousDossier[i][ii][iii].length - 4, ret.sousSousDossier[i][ii][iii].length) == ".mp3")
 			 							{
-				 							$("#listeMusiques").append('<span id="' + ret.parent[i] + '/' + ret.sousDossier[i][ii] + '/' + ret.sousSousDossier[i][ii][iii]'">' + ret.sousSousDossier[i][ii][iii].substring(0, ret.sousSousDossier[i][ii][iii].length - 4) + '</span> <br />')
+				 							$("#listeMusiques").append('<span id="' + ret.parent[i] + '/' + ret.sousDossier[i][ii] + '/' + ret.sousSousDossier[i][ii][iii] + '">' + ret.sousSousDossier[i][ii][iii].substring(0, ret.sousSousDossier[i][ii][iii].length - 4) + '</span> <br />')
 				 						}
 			 							else if(ret.sousSousDossier[i][ii][iii])
 			 							{
