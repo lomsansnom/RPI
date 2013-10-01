@@ -5,7 +5,7 @@ $(document).ready(function(){
 	
 })
 
-$(".cliquable").on("click", function(){
+$(document).on("click", ".cliquable", function(){
 	data = '{"musique" : "' + $("#cheminMusiques").val() + '/' + $(this).attr('id') + '"}'
 	getMusique(data)
 })
