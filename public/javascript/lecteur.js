@@ -63,7 +63,7 @@ function getListeMusiques(chemin)
 
 function getMusique(data)
 {
-	$.get("/getMusique/test")//" + encodeURIComponent(data))
+	$.get("/getMusique/" + encodeURIComponent(data))
 }
 	
 	
