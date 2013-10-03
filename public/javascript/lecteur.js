@@ -65,7 +65,6 @@ function getMusique(data)
 {
 	$.ajax({async : true, 
 	 	url : '/getMusique',
-	 	timeout : 30000,
 	 	type : 'POST',
 	 	contentType : 'application/json', 
 	 	data : data,
