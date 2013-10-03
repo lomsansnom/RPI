@@ -6,6 +6,6 @@ $(document).ready(function(){
 })
 
 $(document).on("click", ".cliquable", function(){
-	data = '{"musique" : "' + $("#cheminMusiques").val() + '/' + $(this).attr('id') + '"}'
+	data = $("#cheminMusiques").val() + '/' + $(this).attr('id')
 	getMusique(data)
 })

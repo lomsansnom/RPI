@@ -63,15 +63,7 @@ function getListeMusiques(chemin)
 
 function getMusique(data)
 {
-	$.ajax({async : true, 
-	 	url : '/getMusique',
-	 	type : 'POST',
-	 	contentType : 'application/json', 
-	 	data : data,
-	 	success : function(ret){
-	 		alert("ok")
-	 	}
-	})
+	$.ajax({url : "/getMusique/" + encodeURIComponent(data)})
 }
 	
 	
