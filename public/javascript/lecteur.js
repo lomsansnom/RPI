@@ -63,9 +63,8 @@ function getListeMusiques(chemin)
 
 function getMusique(data)
 {
-	$.ajax({url : "/getMusique/" + encodeURIComponent(data)})
+	$.get("/getMusique/" + encodeURIComponent(data))
 }
-	
 	
 	
 	
