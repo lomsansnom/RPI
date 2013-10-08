@@ -6,7 +6,7 @@
 		"address":"192.168.1.45",
 		"port":8080,
 		"domain":"lomsansnom.no-ip.biz",
-		"directory":"/home/pi/Player",
+		"directory":"/home/pi/Player"
 	},
 	"database": {
 		"address":"192.168.1.45",
